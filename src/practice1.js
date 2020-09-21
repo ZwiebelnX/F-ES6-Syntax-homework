@@ -4,7 +4,7 @@ const parseData = (input) => {
     const result = []
     input.data.forEach(array => {
         let columnObj = {}
-        // 不需要单独神明index, 可以查一下forEach内函数的第二个参数就是index
+        // 不需要单独声明index, 可以查一下forEach内函数的第二个参数就是index
         let arrayIndex = 0
         input.column.forEach(column => {
             columnObj[column.name] = array[arrayIndex]
